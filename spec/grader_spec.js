@@ -50,4 +50,8 @@ describe("Median Score", function() {
   });
 })
 
-
+describe("Mode Score", function() {
+ it("should return the median score when given an array of scores which is even in quantity", function() {
+   expect(code.modeScore([82, 92, 75, 91, 92, 89, 95, 100, 86])).toEqual(92);
+  });
+})

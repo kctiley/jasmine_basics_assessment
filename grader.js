@@ -59,6 +59,27 @@ exports.medianScore = function(arrayOfScores){
       (scoresAscendOrder[((arrayOfScores.length)/2) -1])) / 2;
 }
 
+// Mode
+// Write a function modeScore which takes an array of test scores and calculates the mode score. The mode is the value that appears most often.
+// modeScore([82, 92, 75, 91, 92, 89, 95, 100, 86])
+// //=> 92
+exports.modeScore = function(arrayOfScores){  
+  var count = {};
+  var greatestFreq = 0;
+  var mode;
+  arrayOfScores.forEach(function findMode(number) {
+    count[number] = (count[number] || 0) + 1;
+    if (greatestFreq < count[number]) {
+      greatestFreq = count[number];
+      mode = number;
+    }
+  });
+  return mode;
+}
+
+
+
+
 
 
 
