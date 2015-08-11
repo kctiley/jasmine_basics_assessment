@@ -45,6 +45,11 @@ exports.averageScore = function(arrayOfScores){
   return avg;
 }
 
+// Median
+// Write a function medianScore which takes an array of test scores and calculates the median score. The median is the middle value. If there are an even number of scores, calculate the average of the middle two scores.
+// medianScore([52,80,80,86,94])
+// //=> 80
+
 
 
 

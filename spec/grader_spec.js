@@ -38,5 +38,12 @@ describe("averageScore", function() {
   });
 })
 
+describe("Median Score", function() {
+ it("should return the median score when given an array of scores", function() {
+   expect(code.medianScore([52,80,80,86,94])).toEqual(80);
+  });
+})
+
+
 
 
