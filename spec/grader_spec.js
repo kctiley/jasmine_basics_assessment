@@ -39,11 +39,15 @@ describe("averageScore", function() {
 })
 
 describe("Median Score", function() {
- it("should return the median score when given an array of scores", function() {
+ it("should return the median score when given an array of scores which is odd in quantity", function() {
    expect(code.medianScore([52,80,80,86,94])).toEqual(80);
   });
 })
 
-
+describe("Median Score", function() {
+ it("should return the median score when given an array of scores which is even in quantity", function() {
+   expect(code.medianScore([10,20,30,40,50,60])).toEqual(35);
+  });
+})
 
 
