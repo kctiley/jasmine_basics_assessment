@@ -32,4 +32,11 @@ describe("Letter Grader", function() {
   });
 })
 
+describe("averageScore", function() {
+ it("should return the average score when given an array of scores", function() {
+   expect(code.averageScore([90, 95, 87, 60])).toEqual(83);
+  });
+})
+
+
 
