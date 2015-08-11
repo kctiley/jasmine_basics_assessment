@@ -55,7 +55,8 @@ exports.medianScore = function(arrayOfScores){
     return scoresAscendOrder[(Math.floor(arrayOfScores.length/2))]
   }
   else 
-    return "no"/*scoresAscendOrder[(arrayOfScores.length/2)]*/
+    return ((scoresAscendOrder[(arrayOfScores.length/2)]) + 
+      (scoresAscendOrder[((arrayOfScores.length)/2) -1])) / 2;
 }
 
 
